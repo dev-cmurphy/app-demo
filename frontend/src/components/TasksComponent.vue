@@ -15,7 +15,7 @@
   
   <script>
 
-  const server = '';
+  const server = 'backend-kappa-wine.vercel.app';
 
   export default {
     data() {
