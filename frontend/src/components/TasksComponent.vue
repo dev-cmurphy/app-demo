@@ -1,7 +1,7 @@
 <!-- src/components/TasksComponent.vue -->
 <template>
     <div>
-      <h1>Task Manager</h1>
+      <h1>Task Manager v2.0</h1>
       <input v-model="newTask.id" placeholder="Task ID" />
       <button @click="addTask">Add Task</button>
       <ul>
