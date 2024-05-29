@@ -14,6 +14,9 @@
   </template>
   
   <script>
+
+  const server = '';
+
   export default {
     data() {
       return {
@@ -25,7 +28,7 @@
     },
     methods: {
       fetchTasks() {
-        fetch('https://server-kappa-liart-34.vercel.app/api/tasks')
+        fetch(`${server}/api/tasks`)
           .then(response => response.json())
           .then(data => {
             this.tasks = data;
@@ -35,7 +38,7 @@
           });
       },
       addTask() {
-        fetch('https://server-kappa-liart-34.vercel.app/api/tasks', {
+        fetch(`${server}/api/tasks`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -52,7 +55,7 @@
           });
       },
       deleteTask(id) {
-        fetch(`https://server-kappa-liart-34.vercel.app/api/tasks/${id}`, {
+        fetch(`${server}/api/tasks/${id}`, {
           method: 'DELETE'
         })
           .then(() => {
