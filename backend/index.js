@@ -5,8 +5,7 @@ const port = process.env.PORT || 3000;
 
 let tasks = [ 
     {
-        'id': 1,
-        'test': 'patate',
+        id: 1
     } 
 ];
 
